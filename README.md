@@ -1,4 +1,4 @@
-# Peca cotada com OpenGL e Bresenham
+# Algoritmo Bresenham Python
 
 Este projeto desenha uma peca tecnica cotada em uma janela OpenGL, usando Python. A figura foi montada a partir das medidas da imagem de referencia, considerando o ponto vermelho como a origem `(0, 0)`.
 
