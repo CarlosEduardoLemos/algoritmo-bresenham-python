@@ -1,6 +1,7 @@
 from OpenGL.GL import *
 from OpenGL.GLU import *
 from OpenGL.GLUT import *
+from ctypes import c_void_p
 from math import cos, sin
 
 
@@ -9,6 +10,7 @@ from math import cos, sin
 SCALE = 6
 OFFSET_X = 230
 OFFSET_Y = 130
+STROKE_ROMAN_FONT = c_void_p(None)
 
 
 # Vertices do contorno da peca, em ordem, usando o ponto vermelho como
@@ -113,7 +115,7 @@ def draw_text(text, x, y, scale=0.13, rotation=0):
     glRotatef(rotation, 0, 0, 1)
     glScalef(scale, scale, scale)
     for char in text:
-        glutStrokeCharacter(GLUT_STROKE_ROMAN, ord(char))
+        glutStrokeCharacter(STROKE_ROMAN_FONT, ord(char))
     glPopMatrix()
 
 
