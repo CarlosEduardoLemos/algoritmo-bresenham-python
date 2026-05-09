@@ -23,14 +23,14 @@ pip install PyOpenGL PyOpenGL_accelerate
 No terminal, dentro da pasta do projeto, execute:
 
 ```bash
-python aa.py
+python bresenham_figura.py
 ```
 
 Ao rodar o arquivo, sera aberta uma janela chamada **Peca cotada com Bresenham**, mostrando a peca desenhada com suas respectivas cotas.
 
 ## Como o codigo funciona
 
-O arquivo `aa.py` usa a biblioteca `PyOpenGL` para abrir uma janela grafica e desenhar a figura. As coordenadas principais da peca ficam na lista `PIECE_POINTS`, que representa os vertices do contorno com base nas medidas da imagem original.
+O arquivo `bresenham_figura.py` usa a biblioteca `PyOpenGL` para abrir uma janela grafica e desenhar a figura. As coordenadas principais da peca ficam na lista `PIECE_POINTS`, que representa os vertices do contorno com base nas medidas da imagem original.
 
 A funcao `to_screen()` converte as coordenadas da peca para coordenadas da tela, aplicando escala e deslocamento. Isso permite trabalhar com as medidas da imagem e depois posicionar tudo corretamente na janela.
 
@@ -42,6 +42,6 @@ As funcoes `horizontal_dimension()`, `vertical_dimension()`, `draw_arrow()` e `d
 
 ## Arquivos
 
-- `aa.py`: codigo principal do desenho.
-- `1000454223.jpg`: imagem usada como referencia.
-- `Captura de tela 2026-05-08 210536.png`: exemplo do resultado gerado.
+- `bresenham_figura.py`: codigo principal do desenho.
+- `imagens/Resultado Solicitado.jpg`: imagem usada como referencia.
+- `imagens/Resultado do Código.png`: exemplo do resultado gerado.
